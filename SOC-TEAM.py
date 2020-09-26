@@ -593,7 +593,11 @@ elif jawaban == "5":
 
 	if int(brs) <= 500000:
 		brs = 500000
+
+	OskharGans.reead()
+
 	OskharGans.input_data(inurl,z)
+
 	m=int(int(brs)/100);os.system("sed -n 1,%sp %s > %s1.txt"%(m,fl,nm));a=m*2;os.system("sed -n %s,%sp %s > %s2.txt"%(m,a,fl,nm));a=m*2;
 	b=m*3;os.system("sed -n %s,%sp %s > %s3.txt"%(a,b,fl,nm));a=m*3;b=m*4;os.system("sed -n %s,%sp %s > %s4.txt"%(a,b,fl,nm));a=m*4;b=m*5;
 	os.system("sed -n %s,%sp %s > %s5.txt"%(a,b,fl,nm));a=m*5;b=m*6;os.system("sed -n %s,%sp %s > %s6.txt"%(a,b,fl,nm));a=m*6;b=m*7;
