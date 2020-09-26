@@ -1,1 +1,1 @@
-# SOC-TEAM
+# its main, don't recod kontol
