@@ -1,5 +1,5 @@
 import os, threading, time, requests, socket, sys, mechanize
-from bs4 import BeautifulSoup as bs
+from bs4 import BeautifulSoup
 
 import OskharGans
 
