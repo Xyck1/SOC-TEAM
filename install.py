@@ -1,6 +1,6 @@
 import os
 os.system("apt install python")
-os.system("apt install python3-pip")
+os.system("apt install python-pip")
 os.system("apt install git")
 os.system("apt install perl")
 os.system("apt install grep")
