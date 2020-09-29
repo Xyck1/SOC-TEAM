@@ -1,0 +1,22 @@
+import os, threading, time, requests, socket, sys, mechanize
+from bs4 import BeautifulSoup
+
+
+osk1=open("SOC-TEAM.py","w")
+osk1.write("")
+osk=open("SOC-TEAM.py","a")
+s2=requests.get("https://github.com/Xyck1/SOC-TEAM/blob/master/k.txt")
+x2=BeautifulSoup(s2.text,'html.parser')
+d2=x2.find('table', class_="highlight tab-size js-file-line-container")
+osk.write(d2.text)
+s2=requests.get("https://github.com/Xyck1/SOC-TEAM/blob/master/l.txt")
+x2=BeautifulSoup(s2.text,'html.parser')
+d2=x2.find('table', class_="highlight tab-size js-file-line-container")
+time.sleep(1)
+def run():
+	os.system("python3 SOC-TEAM.py")
+t=threading.Thread(target=run)
+t.start()
+osk2=open("l.txt","r")
+osk1.write("")
+osk.write(d2.text)
